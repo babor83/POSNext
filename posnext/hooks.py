@@ -247,7 +247,7 @@ fixtures = [
 			[
 				"module",
 				"in",
-				["OmniPOS"]
+				["POSNext"]
             ]
         ]
 	},
