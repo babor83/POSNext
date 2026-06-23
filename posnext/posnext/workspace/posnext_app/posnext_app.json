@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"yVTUqmmOQ4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">POSNext App</span>\",\"col\":12}},{\"id\":\"AGVknHMegA\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"HvULPk_Rfk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"POSNext\",\"col\":3}},{\"id\":\"kXI-r7KKHs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"POS Profile\",\"col\":3}},{\"id\":\"hY_mSSnCQE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"POS Invoice\",\"col\":3}},{\"id\":\"QxyLnf5e7b\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}},{\"id\":\"fAJwY94pja\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gEsh8b_uUC\",\"type\":\"card\",\"data\":{\"card_name\":\"POS List\",\"col\":4}},{\"id\":\"Qrsy7feydr\",\"type\":\"card\",\"data\":{\"card_name\":\"Item Master\",\"col\":4}},{\"id\":\"DVh90WV9HJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Customer Master\",\"col\":4}}]",
+ "content": "[{\"id\":\"yVTUqmmOQ4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">OmniPOS App</span>\",\"col\":12}},{\"id\":\"AGVknHMegA\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"HvULPk_Rfk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"OmniPOS\",\"col\":3}},{\"id\":\"kXI-r7KKHs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"POS Profile\",\"col\":3}},{\"id\":\"hY_mSSnCQE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"POS Invoice\",\"col\":3}},{\"id\":\"QxyLnf5e7b\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}},{\"id\":\"fAJwY94pja\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"gEsh8b_uUC\",\"type\":\"card\",\"data\":{\"card_name\":\"POS List\",\"col\":4}},{\"id\":\"Qrsy7feydr\",\"type\":\"card\",\"data\":{\"card_name\":\"Item Master\",\"col\":4}},{\"id\":\"DVh90WV9HJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Customer Master\",\"col\":4}}]",
  "creation": "2024-08-10 19:27:26.325720",
  "custom_blocks": [],
  "docstatus": 0,
@@ -11,7 +11,7 @@
  "idx": 0,
  "indicator_color": "green",
  "is_hidden": 0,
- "label": "POSNext App",
+ "label": "OmniPOS App",
  "links": [
   {
    "hidden": 0,
@@ -133,8 +133,8 @@
  ],
  "modified": "2024-08-10 19:39:04.430549",
  "modified_by": "Administrator",
- "module": "Posnext",
- "name": "POSNext App",
+ "module": "OmniPOS",
+ "name": "OmniPOS App",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
@@ -146,8 +146,8 @@
   {
    "color": "Grey",
    "doc_view": "List",
-   "label": "POSNext",
-   "link_to": "posnext",
+   "label": "OmniPOS",
+   "link_to": "OmniPOS",
    "type": "Page"
   },
   {
@@ -175,5 +175,5 @@
    "type": "DocType"
   }
  ],
- "title": "POSNext App"
+ "title": "OmniPOS App"
 }

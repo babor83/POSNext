@@ -1,9 +1,9 @@
 [project]
-name = "posnext"
+name = "OmniPOS"
 authors = [
     { name = "jan", email = "jan@gmail.com"}
 ]
-description = "POSNext"
+description = "OmniPOS"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

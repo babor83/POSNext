@@ -1,5 +1,5 @@
-frappe.provide('posnext.PointOfSale');
-posnext.PointOfSale.ItemCart = class {
+frappe.provide('OmniPOS.PointOfSale');
+OmniPOS.PointOfSale.ItemCart = class {
 	constructor({ wrapper, events, settings }) {
 		this.wrapper = wrapper;
 		this.events = events;
@@ -157,7 +157,7 @@ this.highlight_checkout_btn(true);
 	make_cart_numpad() {
 		this.$numpad_section = this.$component.find('.numpad-section');
 
-		this.number_pad = new posnext.PointOfSale.NumberPad({
+		this.number_pad = new OmniPOS.PointOfSale.NumberPad({
 			wrapper: this.$numpad_section,
 			events: {
 				numpad_event: this.on_numpad_event.bind(this)
@@ -253,7 +253,7 @@ this.highlight_checkout_btn(true);
 							frappe.throw("Mobile Number Length is " + me.settings.custom_mobile_number_length.toString())
 						}
 						frappe.call({
-							method: "posnext.posnext.page.posnext.point_of_sale.create_customer",
+							method: "OmniPOS.OmniPOS.page.OmniPOS.point_of_sale.create_customer",
 							args: {
 								customer: values['mobile_number']
 							},
@@ -379,7 +379,7 @@ this.highlight_checkout_btn(true);
 							frappe.throw("Mobile Number Length is " + me.settings.custom_mobile_number_length.toString())
 						}
 						frappe.call({
-							method: "posnext.posnext.page.posnext.point_of_sale.create_customer",
+							method: "OmniPOS.OmniPOS.page.OmniPOS.point_of_sale.create_customer",
 							args: {
 								customer: values['mobile_number']
 							},
@@ -566,7 +566,7 @@ numpad_num.on('click', '.delete', function() {
 			<div class="customer-field"></div>
 		`);
 		const me = this;
-		const query = { query: 'posnext.controllers.queries.customer_query' };
+		const query = { query: 'OmniPOS.controllers.queries.customer_query' };
 		const allowed_customer_group = this.allowed_customer_groups || [];
 		if (allowed_customer_group.length) {
 			query.filters = {

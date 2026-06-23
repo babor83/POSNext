@@ -6,14 +6,14 @@
  "idx": 0,
  "modified": "2024-07-29 09:37:55.329310",
  "modified_by": "Administrator",
- "module": "Posnext",
- "name": "posnext",
+ "module": "OmniPOS",
+ "name": "OmniPOS",
  "owner": "Administrator",
- "page_name": "posnext",
+ "page_name": "OmniPOS",
  "roles": [],
  "script": null,
  "standard": "Yes",
  "style": null,
  "system_page": 0,
- "title": "POSNext"
+ "title": "OmniPOS"
 }

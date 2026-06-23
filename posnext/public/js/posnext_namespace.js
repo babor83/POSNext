@@ -1,2 +1,2 @@
-// window.posnext = window.posnext || {};
-window.posnextt.PointOfSale = window.posnextt.PointOfSale || {};
+// window.OmniPOS = window.OmniPOS || {};
+window.OmniPOSt.PointOfSale = window.OmniPOSt.PointOfSale || {};

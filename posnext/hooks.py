@@ -1,8 +1,8 @@
-app_name = "posnext"
-app_title = "Posnext"
-app_publisher = "jan"
-app_description = "POSNext"
-app_email = "jan@gmail.com"
+app_name = "OmniPOS"
+app_title = "OmniPOS"
+app_publisher = "OmniLab"
+app_description = "OmniPOS"
+app_email = "info@omnilab.com"
 app_license = "mit"
 # required_apps = []
 
@@ -10,26 +10,26 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/posnext/css/posnext.css"
+# app_include_css = "/assets/OmniPOS/css/OmniPOS.css"
 app_include_js = [
-    # "/assets/posnext/js/posnext_namespace.js",
-    # "/assets/posnext/js/pos_controller.js",
-    # "/assets/posnext/js/pos_item_cart.js",
-    # "/assets/posnext/js/pos_item_details.js",
-    # "/assets/posnext/js/pos_item_selector.js",
-    # "/assets/posnext/js/pos_number_pad.js",
-    # "/assets/posnext/js/pos_past_order_list.js",
-    # "/assets/posnext/js/pos_past_order_summary.js",
-    # "/assets/posnext/js/pos_payment.js",
-    "posnext.bundle.js",
+    # "/assets/OmniPOS/js/OmniPOS_namespace.js",
+    # "/assets/OmniPOS/js/pos_controller.js",
+    # "/assets/OmniPOS/js/pos_item_cart.js",
+    # "/assets/OmniPOS/js/pos_item_details.js",
+    # "/assets/OmniPOS/js/pos_item_selector.js",
+    # "/assets/OmniPOS/js/pos_number_pad.js",
+    # "/assets/OmniPOS/js/pos_past_order_list.js",
+    # "/assets/OmniPOS/js/pos_past_order_summary.js",
+    # "/assets/OmniPOS/js/pos_payment.js",
+    "OmniPOS.bundle.js",
 ]
 
 # include js, css files in header of web template
-# web_include_css = "/assets/posnext/css/posnext.css"
-# web_include_js = "/assets/posnext/js/posnext.js"
+# web_include_css = "/assets/OmniPOS/css/OmniPOS.css"
+# web_include_js = "/assets/OmniPOS/js/OmniPOS.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "posnext/public/scss/website"
+# website_theme_scss = "OmniPOS/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -48,7 +48,7 @@ doctype_js = {"POS Profile" : "public/js/pos_profile.js"}
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "posnext/public/icons.svg"
+# app_include_icons = "OmniPOS/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -72,43 +72,43 @@ doctype_js = {"POS Profile" : "public/js/pos_profile.js"}
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "posnext.utils.jinja_methods",
-# 	"filters": "posnext.utils.jinja_filters"
+# 	"methods": "OmniPOS.utils.jinja_methods",
+# 	"filters": "OmniPOS.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
-# before_install = "posnext.install.before_install"
-# after_install = "posnext.install.after_install"
+# before_install = "OmniPOS.install.before_install"
+# after_install = "OmniPOS.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "posnext.uninstall.before_uninstall"
-# after_uninstall = "posnext.uninstall.after_uninstall"
+# before_uninstall = "OmniPOS.uninstall.before_uninstall"
+# after_uninstall = "OmniPOS.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "posnext.utils.before_app_install"
-# after_app_install = "posnext.utils.after_app_install"
+# before_app_install = "OmniPOS.utils.before_app_install"
+# after_app_install = "OmniPOS.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "posnext.utils.before_app_uninstall"
-# after_app_uninstall = "posnext.utils.after_app_uninstall"
+# before_app_uninstall = "OmniPOS.utils.before_app_uninstall"
+# after_app_uninstall = "OmniPOS.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "posnext.notifications.get_notification_config"
+# notification_config = "OmniPOS.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -147,39 +147,39 @@ doctype_js = {"POS Profile" : "public/js/pos_profile.js"}
 
 # scheduler_events = {
 # 	"all": [
-# 		"posnext.tasks.all"
+# 		"OmniPOS.tasks.all"
 # 	],
 # 	"daily": [
-# 		"posnext.tasks.daily"
+# 		"OmniPOS.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"posnext.tasks.hourly"
+# 		"OmniPOS.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"posnext.tasks.weekly"
+# 		"OmniPOS.tasks.weekly"
 # 	],
 # 	"monthly": [
-# 		"posnext.tasks.monthly"
+# 		"OmniPOS.tasks.monthly"
 # 	],
 # }
 
 # Testing
 # -------
 
-# before_tests = "posnext.install.before_tests"
+# before_tests = "OmniPOS.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "posnext.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "OmniPOS.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "posnext.task.get_dashboard_data"
+# 	"Task": "OmniPOS.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -193,13 +193,13 @@ doctype_js = {"POS Profile" : "public/js/pos_profile.js"}
 
 # Request Events
 # ----------------
-# before_request = ["posnext.utils.before_request"]
-# after_request = ["posnext.utils.after_request"]
+# before_request = ["OmniPOS.utils.before_request"]
+# after_request = ["OmniPOS.utils.after_request"]
 
 # Job Events
 # ----------
-# before_job = ["posnext.utils.before_job"]
-# after_job = ["posnext.utils.after_job"]
+# before_job = ["OmniPOS.utils.before_job"]
+# after_job = ["OmniPOS.utils.after_job"]
 
 # User Data Protection
 # --------------------
@@ -229,7 +229,7 @@ doctype_js = {"POS Profile" : "public/js/pos_profile.js"}
 # --------------------------------
 
 # auth_hooks = [
-# 	"posnext.auth.validate"
+# 	"OmniPOS.auth.validate"
 # ]
 
 # Automatically update python controller files with type annotations for this app.
@@ -247,7 +247,7 @@ fixtures = [
 			[
 				"module",
 				"in",
-				["Posnext"]
+				["OmniPOS"]
             ]
         ]
 	},

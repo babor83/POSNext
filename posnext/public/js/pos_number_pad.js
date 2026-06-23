@@ -1,5 +1,5 @@
-frappe.provide('posnext.PointOfSale');
-posnext.PointOfSale.NumberPad = class {
+frappe.provide('OmniPOS.PointOfSale');
+OmniPOS.PointOfSale.NumberPad = class {
 	constructor({ wrapper, events, cols, keys, css_classes, fieldnames_map }) {
 		this.wrapper = wrapper;
 		this.events = events;

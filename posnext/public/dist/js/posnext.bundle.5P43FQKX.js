@@ -1,5 +1,5 @@
 (() => {
-  // ../posnext/posnext/public/js/posnext.bundle.js
-  window.posnext = window.posnext || {};
+  // ../OmniPOS/OmniPOS/public/js/OmniPOS.bundle.js
+  window.OmniPOS = window.OmniPOS || {};
 })();
-//# sourceMappingURL=posnext.bundle.5P43FQKX.js.map
+//# sourceMappingURL=OmniPOS.bundle.5P43FQKX.js.map

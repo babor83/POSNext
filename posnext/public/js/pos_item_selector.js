@@ -1,7 +1,7 @@
-frappe.provide('posnext.PointOfSale');
+frappe.provide('OmniPOS.PointOfSale');
 var view = "List"
 
-posnext.PointOfSale.ItemSelector = class {
+OmniPOS.PointOfSale.ItemSelector = class {
 	// eslint-disable-next-line no-unused-vars
 	constructor({ frm, wrapper, events, pos_profile, settings,currency,init_item_cart,reload_status }) {
 		this.wrapper = wrapper;
@@ -408,7 +408,7 @@ posnext.PointOfSale.ItemSelector = class {
                 onchange: function () {
 
 					if(me.reload_status && me.pos_profile !== this.value){
-						frappe.pages['posnext'].refresh(window.wrapper,window.onScan,this.value)
+						frappe.pages['OmniPOS'].refresh(window.wrapper,window.onScan,this.value)
 					}
 
 					// console.log("ON ON CHANGE")
@@ -418,7 +418,7 @@ posnext.PointOfSale.ItemSelector = class {
 					// 	this.events.check_opening_entry()
 					// }
 					// window.wrapper.please_refresh = true
-					// frappe.pages['posnext'].refresh_data(window.wrapper)
+					// frappe.pages['OmniPOS'].refresh_data(window.wrapper)
 					// console.log("HEEEERE")
                 }
 			},

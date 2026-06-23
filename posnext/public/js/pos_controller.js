@@ -1,7 +1,7 @@
-frappe.provide('posnext.PointOfSale');
+frappe.provide('OmniPOS.PointOfSale');
 var selected_item = null
 
-posnext.PointOfSale.Controller = class {
+OmniPOS.PointOfSale.Controller = class {
 	constructor(wrapper) {
 		console.log("CONTROLLLER HERE ssssssadasdasd")
 		this.wrapper = $(wrapper).find('.layout-main-section');
@@ -17,7 +17,7 @@ posnext.PointOfSale.Controller = class {
 	}
 
 	fetch_opening_entry(value) {
-		return frappe.call("posnext.posnext.page.posnext.point_of_sale.check_opening_entry", { "user": frappe.session.user, "value": value });
+		return frappe.call("OmniPOS.OmniPOS.page.OmniPOS.point_of_sale.check_opening_entry", { "user": frappe.session.user, "value": value });
 	}
 
 	check_opening_entry(value = "") {
@@ -104,7 +104,7 @@ posnext.PointOfSale.Controller = class {
 				// filter balance details for empty rows
 				balance_details = balance_details.filter(d => d.mode_of_payment);
 
-				const method = "posnext.posnext.page.posnext.point_of_sale.create_opening_voucher";
+				const method = "OmniPOS.OmniPOS.page.OmniPOS.point_of_sale.create_opening_voucher";
 				const res = await frappe.call({ method, args: { pos_profile, company, balance_details }, freeze:true });
 				!res.exc && me.prepare_app_defaults(res.message);
 				dialog.hide();
@@ -133,7 +133,7 @@ posnext.PointOfSale.Controller = class {
 		});
 
 		frappe.call({
-			method: "posnext.posnext.page.posnext.point_of_sale.get_pos_profile_data",
+			method: "OmniPOS.OmniPOS.page.OmniPOS.point_of_sale.get_pos_profile_data",
 			args: { "pos_profile": this.pos_profile },
 			callback: (res) => {
 				const profile = res.message;
@@ -255,7 +255,7 @@ posnext.PointOfSale.Controller = class {
 		if(this.frm){
 		this.frm.doc.set_warehouse = this.settings.warehouse
 		}
-		this.item_selector = new posnext.PointOfSale.ItemSelector({
+		this.item_selector = new OmniPOS.PointOfSale.ItemSelector({
 			wrapper: this.$components_wrapper,
 			pos_profile: this.pos_profile,
 			settings: this.settings,
@@ -292,7 +292,7 @@ posnext.PointOfSale.Controller = class {
 	}
 
 	init_item_cart() {
-		this.cart = new posnext.PointOfSale.ItemCart({
+		this.cart = new OmniPOS.PointOfSale.ItemCart({
 			wrapper: this.$components_wrapper,
 			settings: this.settings,
 			events: {
@@ -329,7 +329,7 @@ posnext.PointOfSale.Controller = class {
 	}
 
 	init_item_details() {
-		this.item_details = new posnext.PointOfSale.ItemDetails({
+		this.item_details = new OmniPOS.PointOfSale.ItemDetails({
 			wrapper: this.$components_wrapper,
 			settings: this.settings,
 			events: {
@@ -399,7 +399,7 @@ posnext.PointOfSale.Controller = class {
 	}
 
 	init_payments() {
-		this.payment = new posnext.PointOfSale.Payment({
+		this.payment = new OmniPOS.PointOfSale.Payment({
 			wrapper: this.$components_wrapper,
 			events: {
 				get_frm: () => this.frm || {},
@@ -432,7 +432,7 @@ posnext.PointOfSale.Controller = class {
 	}
 
 	init_recent_order_list() {
-		this.recent_order_list = new posnext.PointOfSale.PastOrderList({
+		this.recent_order_list = new OmniPOS.PointOfSale.PastOrderList({
 			wrapper: this.$components_wrapper,
 			events: {
 				open_invoice_data: (name) => {
@@ -453,7 +453,7 @@ posnext.PointOfSale.Controller = class {
 	}
 
 	init_order_summary() {
-		this.order_summary = new posnext.PointOfSale.PastOrderSummary({
+		this.order_summary = new OmniPOS.PointOfSale.PastOrderSummary({
 			wrapper: this.$components_wrapper,
 			pos_profile: this.settings,
 			events: {

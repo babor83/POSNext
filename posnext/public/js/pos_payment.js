@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-frappe.provide('posnext.PointOfSale');
-posnext.PointOfSale.Payment = class {
+frappe.provide('OmniPOS.PointOfSale');
+OmniPOS.PointOfSale.Payment = class {
 	constructor({ events, wrapper }) {
 		this.wrapper = wrapper;
 		this.events = events;
@@ -85,7 +85,7 @@ posnext.PointOfSale.Payment = class {
 
 	initialize_numpad() {
 		const me = this;
-		this.number_pad = new posnext.PointOfSale.NumberPad({
+		this.number_pad = new OmniPOS.PointOfSale.NumberPad({
 			wrapper: this.$numpad,
 			events: {
 				numpad_event: function($btn) {

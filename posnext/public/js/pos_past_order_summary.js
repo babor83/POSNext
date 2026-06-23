@@ -1,5 +1,5 @@
-frappe.provide('posnext.PointOfSale');
-posnext.PointOfSale.PastOrderSummary = class {
+frappe.provide('OmniPOS.PointOfSale');
+OmniPOS.PointOfSale.PastOrderSummary = class {
 	constructor({ wrapper, pos_profile,events }) {
 		this.wrapper = wrapper;
 		this.pos_profile = pos_profile;
@@ -191,7 +191,7 @@ posnext.PointOfSale.PastOrderSummary = class {
 			console.log(message)
 			// message += "Hello, here is the file you requested."
 			frappe.call({
-				method: "posnext.posnext.page.posnext.point_of_sale.generate_pdf_and_save",
+				method: "OmniPOS.OmniPOS.page.OmniPOS.point_of_sale.generate_pdf_and_save",
 				args: {
 					docname: this.doc.name,
 					doctype: this.doc.doctype,

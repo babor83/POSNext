@@ -1,15 +1,15 @@
-// frappe.provide('posnext');
+// frappe.provide('OmniPOS');
 // (function() {
 // 	console.log("HEREREssssssww")
-//     var scriptPath = '/assets/posnext/js/pos_controller.js';
+//     var scriptPath = '/assets/OmniPOS/js/pos_controller.js';
 //     var scriptUrl = scriptPath + '?v=' + Date.now();
 //
 //     var script = document.createElement('script');
 //     script.src = scriptUrl;
 //
 //     document.head.appendChild(script);
-// })();'console.log("POSNEXT POINTSALE")
-frappe.pages['posnext'].on_page_load = function(wrapper) {
+// })();'console.log("OmniPOS POINTSALE")
+frappe.pages['OmniPOS'].on_page_load = function(wrapper) {
 	frappe.ui.make_app_page({
 		parent: wrapper,
 		title: __('Point of Sales'),
@@ -17,10 +17,10 @@ frappe.pages['posnext'].on_page_load = function(wrapper) {
 	});
 
 		window.wrapper = wrapper
-		wrapper.pos = new posnext.PointOfSale.Controller(wrapper);
+		wrapper.pos = new OmniPOS.PointOfSale.Controller(wrapper);
 		window.cur_pos = wrapper.pos;
 }
-frappe.pages['posnext'].refresh = function(wrapper,onscan = "",value="") {
+frappe.pages['OmniPOS'].refresh = function(wrapper,onscan = "",value="") {
 	// if (document.scannerDetectionData) {
 		if(!onscan){
 			window.onScan.detachFrom(document)

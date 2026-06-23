@@ -1,7 +1,7 @@
-## Posnext
+## OmniPOS
 
-POSNext
+OmniPOS
 
 #### License
 
-mit# POSNext
+mit# OmniPOS

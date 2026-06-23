@@ -1,6 +1,6 @@
-frappe.provide('posnext.PointOfSale');
+frappe.provide('OmniPOS.PointOfSale');
 var invoicess = []
-posnext.PointOfSale.PastOrderList = class {
+OmniPOS.PointOfSale.PastOrderList = class {
 	constructor({ wrapper, events }) {
 		this.wrapper = wrapper;
 		this.events = events;

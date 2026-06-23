@@ -1,5 +1,5 @@
-frappe.provide('posnext.PointOfSale');
-posnext.PointOfSale.ItemDetails = class {
+frappe.provide('OmniPOS.PointOfSale');
+OmniPOS.PointOfSale.ItemDetails = class {
 	constructor({ wrapper, events, settings }) {
 		this.wrapper = wrapper;
 		this.events = events;
