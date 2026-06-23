@@ -1,5 +1,5 @@
 [project]
-name = "OmniPOS"
+name = "posnext"
 authors = [
     { name = "jan", email = "jan@gmail.com"}
 ]
