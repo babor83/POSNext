@@ -1,4 +1,4 @@
-app_name = "OmniPOS"
+app_name = "posnext"
 app_title = "OmniPOS"
 app_publisher = "OmniLab"
 app_description = "OmniPOS"
