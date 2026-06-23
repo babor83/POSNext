@@ -10,7 +10,7 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/OmniPOS/css/OmniPOS.css"
+# app_include_css = "/assets/OmniPOS/css/posnext.css"
 app_include_js = [
     # "/assets/OmniPOS/js/OmniPOS_namespace.js",
     # "/assets/OmniPOS/js/pos_controller.js",
@@ -21,11 +21,11 @@ app_include_js = [
     # "/assets/OmniPOS/js/pos_past_order_list.js",
     # "/assets/OmniPOS/js/pos_past_order_summary.js",
     # "/assets/OmniPOS/js/pos_payment.js",
-    "OmniPOS.bundle.js",
+    "posnext.bundle.js",
 ]
 
 # include js, css files in header of web template
-# web_include_css = "/assets/OmniPOS/css/OmniPOS.css"
+# web_include_css = "/assets/OmniPOS/css/posnext.css"
 # web_include_js = "/assets/OmniPOS/js/OmniPOS.js"
 
 # include custom scss in every website theme (without file extension ".scss")
