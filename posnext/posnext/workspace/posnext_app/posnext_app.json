@@ -134,7 +134,7 @@
  "modified": "2024-08-10 19:39:04.430549",
  "modified_by": "Administrator",
  "module": "POSNext",
- "name": "OmniPOS App",
+ "name": "posnext App",
  "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
@@ -147,7 +147,7 @@
    "color": "Grey",
    "doc_view": "List",
    "label": "OmniPOS",
-   "link_to": "OmniPOS",
+   "link_to": "posnext",
    "type": "Page"
   },
   {
